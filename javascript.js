@@ -4,6 +4,3 @@ const naudaKopa=1000;
 let uzvaretajuSkaits=3;
 
 Math.random=Math.random()*10;
-
-
-console.log (vardi[random]);
