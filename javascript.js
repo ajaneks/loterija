@@ -1,6 +1,23 @@
-const vardi=['Valdis Zatlers','Lauris Reinks', 'Martins Krumins','Abrahams Linkolns', 'Imants Ziedonis']
-const balvas=['3m virve no Ksenukai','Dainu skapis','e-talons','0.5l limpo','datorpele']
-const naudaKopa=1000;
-let uzvaretajuSkaits=3;
+const vardi = ["Valdis Zatlers", "Lauris Reiniks", "Martins Krumins", "Imants Ziedonis", "Intars Busulis", "Uzumaki Naruto"];
+const balvas = ["3m virve no Ksenukai", "Dainu skapis", "e-talons", "0.5l limpo", "datorpele"];
+const naudaKopa = 1000000;
+let uzvaretajuSkaits = 4;
 
-Math.random=Math.random()*10;
+let rindas = document.querySelector('.rindas');
+//Math.random=Math.random()*10;
+
+for (let i = 0; i < uzvaretajuSkaits; i++) {
+    let rand = Math.random() * vardi.length;
+    rand = Math.floor(rand);
+    console.log(vardi[rand]);
+
+    let uzvaretajs = vardi[rand];
+
+
+    rindas.innerHTML += `
+ <tr>
+  <td>${i + 1}</td>
+  <td>${uzvaretajs}</td>
+</tr>`
+
+}

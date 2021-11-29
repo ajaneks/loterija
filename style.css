@@ -1,0 +1,21 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+        width: 50%;
+      
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  thead {
+    background-color: #04AA6D;
+  }
