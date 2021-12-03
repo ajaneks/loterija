@@ -6,10 +6,19 @@ let uzvaretajuSkaits = 4;
 let rindas = document.querySelector('.rindas');
 //Math.random=Math.random()*10;
 
+function randFunc(maxCipars) {
+  let random1=Math.floor(Math.random()*maxCipars);
+  return random1;
+}
+
+function Izlozet() {
+rindas.innerHTML=""; //lai katru reizi izdzes
+
 for (let i = 0; i < uzvaretajuSkaits; i++) {
-    let rand = Math.random() * vardi.length;
-    rand = Math.floor(rand);
-    console.log(vardi[rand]);
+  let rand=randFunc(vardi.length);
+  //  let rand = Math.random() * vardi.length;
+  //  rand = Math.floor(rand);
+  //  console.log(vardi[rand]);
 
     let uzvaretajs = vardi[rand];
 
@@ -21,3 +30,6 @@ for (let i = 0; i < uzvaretajuSkaits; i++) {
 </tr>`
 
 }
+}
+
+
