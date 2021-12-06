@@ -1,5 +1,5 @@
 table, th, td {
-    border: 1px solid black;     
+    border: 2px solid black;     
   }
 
 table {
@@ -19,3 +19,29 @@ table {
 body {
   background-color: rgb(202, 209, 209);
 }
+
+img{
+  width: 200px;
+}
+.btn{
+display: block;
+border: 2px solid black;
+font-size: 15px;
+line-height: 1;
+padding: 16px 30px; 
+border-radius: 30px;
+background:rgb(236, 215, 18);
+color: rgb(0, 0, 0);
+cursor: pointer;
+transition: all 0.05s linear;
+
+}
+.btn:hover,
+.btn:focus{
+  background: rgb(236, 215, 18);
+
+}
+.btn:active{
+  background: orange;
+}
+
