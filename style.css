@@ -1,31 +1,43 @@
 table, th, td {
-    border: 2px solid black;     
+    border: 1px solid black;  
+    text-align: center;   
   }
 
 table {
     width: 50%;
     border-collapse: collapse;
+    text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
   
   th, td {
     text-align: left;
     padding: 15px;
+    text-align: center;
   }
   
   thead {
     background-color: rgb(236, 215, 18);
+    text-align: center;
   }
 
 body {
   background-color: rgb(202, 209, 209);
+  text-align: center;
 }
 
 img{
   width: 200px;
 }
 .btn{
+  margin-left: auto;
+  margin-right: auto;
 display: block;
-border: 2px solid black;
+border: 0;
 font-size: 15px;
 line-height: 1;
 padding: 16px 30px; 
@@ -33,15 +45,13 @@ border-radius: 30px;
 background:rgb(236, 215, 18);
 color: rgb(0, 0, 0);
 cursor: pointer;
-transition: all 0.05s linear;
+transition: all 0.3s linear;
 
 }
-.btn:hover,
-.btn:focus{
-  background: rgb(236, 215, 18);
+.btn:hover{
+  background: rgb(230, 209, 18);
 
 }
 .btn:active{
   background: orange;
 }
-

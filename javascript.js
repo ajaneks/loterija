@@ -1,5 +1,5 @@
 const vardi = ["Valdis Zatlers", "Lauris Reiniks", "Martins Krumins", "Imants Ziedonis", "Intars Busulis", "Uzumaki Naruto"];
-const balvas = ["3m virve no Ksenukai", "Dainu skapis", "e-talons", "0.5l limpo", "datorpele"];
+const balvas = ["3m virve no Ksenukai", "Dainu skapis", "e-talons", "0.5l limpo", "datorpele","4kg lidl banani"];
 const naudaKopa = 1000000;
 let uzvaretajuSkaits = 4;
 
@@ -21,12 +21,14 @@ for (let i = 0; i < uzvaretajuSkaits; i++) {
   //  console.log(vardi[rand]);
 
     let uzvaretajs = vardi[rand];
+    let balva=balvas[rand];
 
 
     rindas.innerHTML += `
  <tr>
   <td>${i + 1}</td>
   <td>${uzvaretajs}</td>
+  <td>${balva}</td>
 </tr>`
 
 }
